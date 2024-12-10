@@ -4,7 +4,6 @@ on:
   push:
     paths:
       - '**.html'
-  workflow_dispatch:
     
 
 jobs:
@@ -27,7 +26,8 @@ jobs:
         with:
           path: .
           
-  deploy_site:
+  deploy:
+    name: deploying site
     if: github.ref == 'refs/heads/main'
     needs: setup
     runs-on: ubuntu-latest
