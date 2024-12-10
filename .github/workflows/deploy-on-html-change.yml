@@ -12,6 +12,11 @@ jobs:
     name: building site
     runs-on: ubuntu-latest
     steps:
+      - name: checkout repo
+        uses: actions/checkout@v4
+        with:
+          path: main
+        
       - name: setup pages
         if: github.ref == 'refs/heads/main'
         uses: actions/configure-pages@v5
