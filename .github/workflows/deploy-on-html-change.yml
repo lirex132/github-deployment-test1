@@ -9,7 +9,7 @@ jobs:
   deploy_site:
     permissions:
       pages: write
-    runs-on: debian-latest
+    runs-on: ubuntu-latest
     steps:
       - name: deploying site changes
         id: deployment
