@@ -20,7 +20,7 @@ jobs:
         if: github.ref == 'refs/heads/main'
         uses: actions/upload-pages-artifact@v3	
         with:
-          path: "github-deployment-test1"
+          path: "github-deployment-test1/index.html"
           
   deploy_site:
     if: github.ref == 'refs/heads/main'
