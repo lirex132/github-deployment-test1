@@ -9,6 +9,7 @@ jobs:
   deploy_site:
     permissions:
       pages: write
+      id-token: write
     runs-on: ubuntu-latest
     steps:
       - name: deploying site changes
